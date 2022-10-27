@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Lyout1</title>
+        <style>
+           * {
+                box-sizing: border-box;
+           }
+           body
+           {
+                display: flex;
+                min-height: 100vh;
+                flex-direction: column;
+                margin: 0;
+           }
+           .headcontainer,.footcontainer
+           {
+            background: greenyellow;
+            height: 30vh;
+
+           }
+           #maincontainer
+           {
+                display: flex;
+                flex: 1;
+           }
+           #maincontainer> article
+           {
+                flex: 1;
+                order: 1;
+           }
+           #maincontainer>nav,#maincontainer>aside
+           {
+                flex: 0 0 30vw;
+
+           }
+           #maincontainer>nav
+           {
+            background: red;
+            order: 3;
+           }
+           #maincontainer>aside
+           {
+                background: pink;
+                order: 5;
+           }
+           .headcontainer,.footcontainer,article,nav,aside
+           {
+            padding:1em;
+           }
+        </style>
+    </head>
+    <body>
+        <header class = "headcontainer">
+            <h1>Header</h1>
+        </header>
+        <div id = "maincontainer">
+            <section1>
+                <article>
+                    <h2>First article</h2>
+                    <p>What is job description and example?
+                        A job description summarizes the essential responsibilities, activities, qualifications and skills for a role. Also known as a JD, this document describes the type of work performed. A job description should include important company details — company mission, culture and any benefits it provides to employees.</p>
+                </article>
+                <article>
+                    <h2>Second article</h2>
+                    <p>How would you describe your work?
+                        Describe your responsibilities in concise statements led by strong verbs. Focus on those skills and strengths that you possess and that you have identified as being important to your field. Try to incorporate industry specific key words.</p>
+                </article>
+            </section1>
+            <nav>Nav</nav>
+            <aside>Aside</aside>
+        </div>
+        <footer class ="footercontainer">Footer </footer>
+    </body>
+   
+</html>
