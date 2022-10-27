@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Lyout4</title>
+        <style>
+           * {
+                box-sizing: border-box;
+           }
+           body
+           {
+                display: flex;
+                min-height: 100vh;
+                flex-direction: row;
+                margin: 0;
+           }
+           .outer-col-1
+           {
+                background: #D7E8D4;
+                flex: 1;
+           }
+           .outr-col-2
+           {
+            display: flex;
+            flex-direction: column;
+            
+           }
+           .inner-col
+           {
+            flex:6;
+           }
+           .inner-row- article
+           {
+                min-height: 50vh;
+           }
+          .inner-row aside
+          {
+            background: green;
+            height: 20vh;
+          }
+           header,footer
+           {
+            background: lightpink;
+            height: 30vh;
+           }
+           header,footer,article,nav,aside
+           {
+            paddong:1em;
+           }
+        </style>
+    </head>
+    <body>
+        <nav class = "outer-col-1">
+            <h3>Nav</h3>
+        </nav>
+        <div class = "outer-col-2">
+            <header>HEADER</header>
+            <main class = "inner row">
+                <div class = "inner-col">
+                    <article> 
+                        <h4>ARTICLE</h4>
+                    </article>
+                        <footer>FOOTER</footer>
+                    
+                </div>
+                
+                <aside>
+                    <h2>ASIDE></h2>
+                </aside>
+            
+           
+            
+        </div>
+        
+    </body>
+   
+</html>
